@@ -67,12 +67,4 @@ For any questions, feedback, or collaboration opportunities, feel free to reach 
  [vaibhavrajvardhan866@gmail.com](mailto:vaibhavrajvardhan866@gmail.com)
 ---
 
-## Acknowledgements
 
-This project was built using some amazing open-source tools:
-
-- [Create React App](https://create-react-app.dev/)
-- [Redux](https://react-redux.js.org/)
-- [Express.js](https://expressjs.com/)
-- [MongoDB](https://www.mongodb.com/)
-- [Passport.js](http://www.passportjs.org/)

@@ -1,40 +1,40 @@
-#  Get-A-Job — MERN Stack Job Search App
+# 🧑‍💼 Get-a-Job
 
-**Get-A-Job** is a dynamic and user-friendly job search platform built with the MERN (MongoDB, Express.js, React, Node.js) stack. It empowers users to browse job listings, apply for opportunities, and manage their job applications seamlessly.
-
----
-
-##  Key Features
-
-- **User Authentication**: Secure sign-up and login using JWT.
-- **Job Search**: Filter jobs by title, keyword, or location.
-- **Detailed Job View**: Explore job descriptions, requirements, and company details.
-- **Apply Online**: Submit applications directly with resumes and relevant info.
-- **Save Listings**: Bookmark jobs for future reference.
-- **User Dashboard**: Manage your profile, saved jobs, and applications in one place.
+**Get-a-Job** is a full-stack job portal web application that enables users to search for jobs, post new listings, and manage job applications. Built with the MERN stack and modern React ecosystem tools, it provides a seamless, responsive, and secure user experience for job seekers and recruiters alike.
 
 ---
 
-##  Tech Stack
+## 🚀 Features
 
-### Frontend:
-- React.js
-- Redux
-- Axios
-- HTML5, CSS3, JavaScript
-
-### Backend:
-- Node.js
-- Express.js
-- MongoDB + Mongoose
-
-### Auth:
-- JSON Web Tokens (JWT)
-
-### Deployment:
-- MongoDB Atlas (Database)
+- 🔐 JWT-based user authentication and authorization
+- 📝 Create, view, update, and delete job listings
+- 🔍 Search/filter job postings by keywords, location, or date
+- 🌙 Fully responsive UI with light/dark themes
+- 📊 Dashboard and stats for users/employers
+- 🛡️ Secure backend using Helmet, XSS Clean, Rate Limiting, and Mongo Sanitize
+- 📦 Modular folder structure with clean code separation
 
 ---
+
+## 🧰 Tech Stack
+
+### 🔧 Client
+- **React 19**, **React Router v7**
+- **Redux Toolkit** for state management
+- **Tailwind CSS** for styling
+- **React Hook Form** for form handling
+- **Axios** for HTTP requests
+- **Vite** for lightning-fast development
+
+### 🔧 Server
+- **Node.js**, **Express.js**
+- **MongoDB** with **Mongoose**
+- **JWT** for authentication
+- **BcryptJS** for password hashing
+- **Express Middleware**: `xss-clean`, `mongo-sanitize`, `rate-limit`, `morgan`
+
+---
+
 
 ## ⚙️ Getting Started
 

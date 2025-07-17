@@ -7,10 +7,15 @@ import { AiOutlineClose, AiOutlineLogout } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import CustomButton from "./CustomButton";
 import { users } from "../utils/data";
-import { useSelector } from "react-redux";
+import { useSelector,useDispatch } from "react-redux";
+import { Logout } from "../redux/userSlice";
 
 function MenuList({ user, onClick }) {
-  const handleLogout = () => {};
+  const dispatch = useDispatch();
+  const handleLogout = () => {
+    dispatch(Logout());
+    window.location.replace("/");
+  };
 
   return (
     <div>
@@ -97,7 +102,7 @@ function MenuList({ user, onClick }) {
   );
 }
 const Navbar = () => {
-  const user = useSelector((state) => state.user);
+  const {user} = useSelector((state) => state.user);
   const [isOpen, setIsOpen] = useState(false);
 
   const handleCloseNavbar = () => {
@@ -110,7 +115,7 @@ const Navbar = () => {
         <nav className='container mx-auto flex items-center justify-between p-5'>
           <div>
             <Link to='/' className='text-blue-600 font-bold text-xl'>
-              Job<span className='text-[#1677cccb]'>Finder</span>
+              GeT-<span className='text-[#1677cccb]'>a-JoB</span>
             </Link>
           </div>
 
@@ -122,7 +127,9 @@ const Navbar = () => {
               <Link to='/companies'>Companies</Link>
             </li>
             <li>
-              <Link to='/upload-job'>Upload Job</Link>
+              <Link to={
+                user?.accountType==="seeker" ?"/applications" : "/upload-job"
+              }>{user?.accountType==="seeker"?"Applications" : "Upload-Job"}</Link>
             </li>
             <li>
               <Link to='/about-us'>About</Link>

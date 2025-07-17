@@ -33,12 +33,13 @@ const Footer = () => {
                 <h2 className='font-medium text-white tracking-widest text-sm mb-3'>
                   {title}
                 </h2>
+
                 <div className='mb-10 flex flex-col gap-3 '>
                   {links.map((link, index) => (
                     <Link
                       key={link + index}
                       to='/'
-                      className='text-white text-sm hover:text-gray-300'
+                      className='text-gray-300 text-sm hover:text-white '
                     >
                       {link}
                     </Link>
@@ -57,7 +58,7 @@ const Footer = () => {
           <div className='container mx-auto px-5 pt-6 pb-8 flex flex-wrap items-center justify-between '>
             <div className='w-full md:w-2/4 lg:w-1/3 h-16 flex items-center justify-center md:justify-start '>
               <TextInput
-                styles='w-full flex-grow md:w-40 2xl:w-64 bg-white-100 sm:mr-4 md-2'
+                styles='w-full flex-grow md:w-40 2xl:w-64 bg-gray-100 sm:mr-4 md-2'
                 type='email'
                 placeholder='Email Address'
               />
@@ -65,7 +66,7 @@ const Footer = () => {
               <CustomButton
                 title='Subscribe'
                 containerStyles={
-                  "block bg-[#001a36] text-black px-5 py-2.5 text-md rounded hover:bg-blue-800 focus:potline-none flex-col items-center mt-2"
+                  "block bg-[#001a36] text-white px-5 py-2.5 text-md rounded hover:bg-blue-800 focus:potline-none flex-col items-center mt-2"
                 }
               />
             </div>
@@ -91,19 +92,19 @@ const Footer = () => {
         <div className='bg-[#001a36]'>
           <div className='container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row'>
             <p className='text-gray-300 text-sm text-center sm:text-left'>
-              &copy; 2025 Job Finder —
+              &copy; 2023 GeT-a-JoB —
               <a
-                href='https://youtube.com/'
+                href='https://youtube.com/@CodeWaveWithAsante'
                 className='text-[#1199e7] ml-1'
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                @BoatTail
+                @Boatteil
               </a>
             </p>
 
             <span className='sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-300 text-sm'>
-              Designed by BoatTail
+              Designed by Boatteil
             </span>
           </div>
         </div>
